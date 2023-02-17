@@ -1,37 +1,23 @@
 import styled from 'styled-components';
 import Image from './Image';
-
 import Faq from './FaqDiv';
+import '../styles/Card.css'
 
 export default function Card(props) {
 
 
     return (
-        <CardDiv>
+        <div className='card'>
             <Image src={props.imageSource} smallBox={props.smallBox}></Image>
             <SmallBoxImg src={props.smallBox}/>
             
             <Faq></Faq>
-        </CardDiv>
+        </div>
     )
 }
 
-const CardDiv = styled.div`
-    width: 920px;
-    height: 500px;
-    background-color: white;
-    border-radius: 20px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-    /* padding: 60px; */
-`;
-
-
-
 const SmallBoxImg = styled.img`
     position: absolute;
-    transform: translate(-92px, 60px);
+    transform: translate(-92px, 50px);
 `
 

@@ -1,0 +1,14 @@
+.faqs {
+    /* border: 1px solid black; */
+    /* display: flex;
+    flex-direction: column; */
+    padding: 60px;
+    padding-left: 0;
+    font-size: var(--fs-body);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: var(--tx-deep-blue);
+}
