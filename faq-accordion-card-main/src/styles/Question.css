@@ -1,22 +1,12 @@
 .question-block::after {
     display: block;
     content: '';
-    /* width: 100%; */
     z-index: 1;
     border: 1px solid var(--divirder-clr);
     height: 1px;
     margin: 0.8rem 0;
-    /* position: absolute; */
     background-color: var(--divider-clr);
 }
-
-/* .question-block { */
-    /* margin: 1rem 0; */
-    /* border-bottom: 1px solid var(--divider-clr); */
-    /* display: grid;
-    grid-auto-columns: 1fr min-content;
-    grid-auto-rows: 1fr min-content; */
-/* } */
 
 .question {
     cursor: pointer;
@@ -54,7 +44,6 @@
 }
 
 .answer {
-    /* transition: all 0.4s ease-in-out; */
     color: var(--tx-dark-blue);
     max-height: 0px;
     overflow: hidden;

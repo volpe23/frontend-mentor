@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import '../styles/Question.css'
 import caret from '../../images/icon-arrow-down.svg'
 import { ReactSVG } from "react-svg";
