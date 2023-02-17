@@ -15,11 +15,16 @@
 
 @media (max-width: 900px) {
     .illustration {
-        transform: translate(20%, -57%);
-        width: 70%;
+        transform: translate(15%, -112px);
+        /* width: 70%; */
+        height: 140px;
     }
 
     .bg {
-        transform: translate(0px, 70px);
+        transform: translate(0px, 94px);
+    }
+
+    .woman {
+        width: 70%;
     }
 }

@@ -9,7 +9,7 @@ export default function Image() {
     return (
 
         <div className="illustration">
-            <picture>
+            <picture className='woman'>
                 <source media='(max-width:900px)' srcset={mobile} />
                 <source media='(min-width:900px)' srcset={svgFull} />
                 <img src={mobile} />
