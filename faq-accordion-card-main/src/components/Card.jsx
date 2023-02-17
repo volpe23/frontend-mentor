@@ -9,7 +9,10 @@ export default function Card(props) {
     return (
         <div className='card'>
             <Image src={props.imageSource} smallBox={props.smallBox}></Image>
-            <SmallBoxImg src={props.smallBox}/>
+            <Picture >
+                <source media='min-width:900px' srcset={props.smallBox}></source>
+                <img  src={props.smallBox}/>
+            </Picture>
             
             <Faq></Faq>
         </div>
@@ -21,3 +24,7 @@ const SmallBoxImg = styled.img`
     transform: translate(-92px, 50px);
 `
 
+const Picture = styled.picture`
+    position: absolute;
+    transform: translate(-92px, 50px);
+`

@@ -28,5 +28,7 @@
   min-height: 100vh;
   display: grid;
   place-items: center;
+  /* align-items: center;
+  justify-content: center; */
   background: linear-gradient(var(--bg-violet), var(--bg-blue));
 }

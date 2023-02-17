@@ -7,9 +7,9 @@ export default function Faq() {
     const [shown, setShow] = useState(null)
 
     const open = (i) => {
-        if (shown === i) return setShow(null);
-
-        setShow(i)
+        if (shown === i) setShow(null);
+        else setShow(i) 
+        
     }
 
     return (
@@ -17,7 +17,7 @@ export default function Faq() {
             <h1>FAQ</h1>
             {questions.map((question, i) => {
                  
-                return <Question key={i} open={open} id={i} show={shown === i ? true : false} question={question.q} answer={question.a} />
+                return <Question key={i} open={() => open(i)} show={shown === i ? true : false} question={question.q} answer={question.a} />
             })}
         </article>
     )

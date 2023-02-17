@@ -1,10 +1,24 @@
 .card {
-    width: 920px;
-    height: 500px;
+    /* flex: 1; */
+    max-width: 920px;
+    /* max-height: 500px; */
     background-color: white;
     border-radius: 20px;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    margin: 0 3rem;
+    box-shadow: 0px 20px 20px -10px #00000054;
+}
+
+@media (max-width: 900px) {
+    .card {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        /* justify-items: center; */
+        overflow: visible;
+        /* max-height: fit-content; */
+        margin: 10rem 15px 3rem 15px;
+    }
 }
